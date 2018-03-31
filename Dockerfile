@@ -18,7 +18,7 @@ FROM base
 RUN dnf -y install mosquitto openssl-libs openldap
 
 RUN mkdir /opt/mosquitto-auth-plug
-COPY --from=authplug /opt/mosquitto-auth-plug/np /opt/mosquitto-auth-plug/auth-plug.so /opt/mosquitto-auth-plug
+COPY --from=authplug /opt/mosquitto-auth-plug/np /opt/mosquitto-auth-plug/auth-plug.so /opt/mosquitto-auth-plug/
 
 EXPOSE 1883 8883
 
