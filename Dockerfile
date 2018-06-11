@@ -1,4 +1,4 @@
-FROM registry.fedoraproject.org/fedora:28 AS base
+FROM registry.fedoraproject.org/fedora:27 AS base
 
 ENV LANG C.UTF-8
 
