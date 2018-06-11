@@ -6,7 +6,7 @@ RUN dnf -y update
 
 FROM base AS authplug
 
-RUN dnf -y install mosquitto mosquitto-devel openssl-devel openldap-devel git gcc rpm-build
+RUN dnf -y install mosquitto mosquitto-devel openssl-devel openldap-devel git gcc rpm-build make
 
 RUN mkdir -p /opt/mosquitto-auth-plug
 RUN git clone https://github.com/jpmens/mosquitto-auth-plug.git /opt/mosquitto-auth-plug
